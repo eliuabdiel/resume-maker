@@ -1,28 +1,42 @@
 import React from 'react'
+import { Skill } from '../skill/Skill'
 import style from './SkillsList.module.css'
 
-interface Skill {
+interface Skills {
   name?: string;
   level?: number;
 }
 
 interface Props {
-  skills?: Skill;
+  skills?: Skills[];
   color?: string;
   showSkillLevel?: boolean;
 }
 
-export const Skills:React.FC<Props> = ({skills,color,showSkillLevel}) => {
-  
+export const SkillsList:React.FC<Props> = ({skills,color,showSkillLevel}) => {
+  console.log(skills)
   if (showSkillLevel)
     return (
       <div className={style.skills}>
-       si
+       {skills &&
+        skills.map( skill => {
+          return (<Skill
+                    name={skill.name}
+                    level={skill.level}
+                  />)
+        }
+        )}
       </div>
     )
   return (
     <div className={style.skills}>
-      no
+      {skills &&
+        skills.map( skill => {
+          return (<Skill
+                    name={skill.name}
+                  />)
+        }
+        )}
     </div>
   )
   

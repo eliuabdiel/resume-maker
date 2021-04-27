@@ -1,7 +1,7 @@
 import React from 'react';
 import { Body } from './components/body/Body';
 import { Header } from './components/header/Header';
-import { Skills } from './components/skillsList/SkillsList';
+import { SkillsList } from './components/skillsList/SkillsList';
 import avatar from './img/avatar-default.svg'
 const resumeContent = {
   personalInformation: {
@@ -12,11 +12,45 @@ const resumeContent = {
     country: "México",
     github: "https://github.com/eliuabdiel",
     linkedin: "https://www.linkedin.com/in/abdiel-zamudio/",
-    number: 6692215558,
+    number: "6692215558",
     email: "eliu_070@hotmail.com"
   },
   HeaderBackgroundColor: "#ffcdd2",
-  profileUrlImg: avatar
+  profileUrlImg: avatar,
+  skills: [
+    {
+      name: "JavaScript",
+      level: 90,
+    },
+    {
+      name: "React JS",
+      level: 80,
+    },
+    {
+      name: "HTML, CSS",
+      level: 80,
+    },
+    {
+      name: "Spring Boot",
+      level: 60,
+    },
+    {
+      name: "Java",
+      level: 70,
+    },
+    {
+      name: "MongoDB",
+      level: 60,
+    },
+    {
+      name: "MySQL",
+      level: 60,
+    },
+    {
+      name: "Git, GitHub",
+      level: 70,
+    }
+  ]
 }
 
 const App: React.FC = () => {
@@ -30,7 +64,9 @@ const App: React.FC = () => {
       imgUrl={resumeContent.profileUrlImg}
     />
     <Body>
-      <Skills></Skills>
+      <SkillsList
+        skills={resumeContent.skills}
+      />
     </Body>
     </>
   )
