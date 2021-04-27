@@ -1,6 +1,5 @@
 import React from 'react'
 import style from './Header.module.css';
-import avatar from '../../img/avatar-default.svg'
 
 
 interface PersonalInformation {
@@ -21,11 +20,11 @@ interface Props {
   backgroundColor?: string;
 }
 
-export const Header: React.FC<Props> = (props: Props) => {
+export const Header: React.FC<Props> = (props) => {
   return (
     <div className={style.header} style={{backgroundColor: props.backgroundColor || '#d6fbfa'}}>
         <div className={style.imgContainer}>
-          <img src={props.imgUrl || avatar} className={style.img} alt={props.personalInformation.name}></img>
+          <img src={props.imgUrl} className={style.img} alt={props.personalInformation.name}></img>
         </div>
         <div className={style.infoContainer}>
           <label className={style.name}>{props.personalInformation.name}</label>
