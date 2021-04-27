@@ -7,7 +7,7 @@ interface PersonalInformation {
   city?: string;
   state?: string;
   country?: string;
-  number?: number;
+  number?: string;
   email?: string;
   title?: string;
   github?: string;
