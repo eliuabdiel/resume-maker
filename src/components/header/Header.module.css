@@ -1,32 +1,55 @@
 .header {
   display: flex;
   width: 100%;
-  min-height: 400px;
+  height: 300px;
 }
 
 .imgContainer {
   max-width: 30%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+}
+
+.img {
+  max-height: 100%;
+  overflow: wrap;
 }
 
 .infoContainer {
+  margin: 1rem 1rem 1rem 3rem;
   display: flex;
   flex-direction: column;
 }
 
 .name {
-  font-weight: bold;
-}
-.title {
   font-weight: normal;
+  font-size: 3rem;
 }
 
-.contact {
+.title {
+  margin-top: 0.5rem;
+  font-weight: 300;
+  font-size: 2rem;
+  flex-grow: 1;
+}
+
+.links {
+  margin-top: 0.3rem;
   font: 1rem;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
 }
-
 .link {
   text-decoration: none;
+  color: black;
 }
-.img {
+.contact {
+  align-self: flex-end;
   width: 100%;
+  font: 1rem;
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.3rem;
 }

@@ -28,8 +28,15 @@ export const Header: React.FC<Props> = (props: Props) => {
           <img src={props.imgUrl || avatar} className={style.img} alt={props.personalInformation.name}></img>
         </div>
         <div className={style.infoContainer}>
-          <h1 className={style.name}>{props.personalInformation.name}</h1>
-          <h2 className={style.title}>{props.personalInformation.title}</h2>
+          <label className={style.name}>{props.personalInformation.name}</label>
+          <label className={style.title}>{props.personalInformation.title}</label>
+          <label className={style.location}>
+            {(
+              props.personalInformation.city +', '+
+              props.personalInformation.state +', '+
+              props.personalInformation.country
+            )}
+          </label>
           <div className={style.links}>
             {(
               props.personalInformation.github && 
@@ -41,7 +48,7 @@ export const Header: React.FC<Props> = (props: Props) => {
                 </a>
               
             )}
-            &nbsp; 
+            
             {(
               props.personalInformation.linkedin && 
                 <a 
@@ -53,7 +60,13 @@ export const Header: React.FC<Props> = (props: Props) => {
             )}
           </div>
           <div className={style.contact}>
-            {props.personalInformation.number}
+            <label>{props.personalInformation.number}</label>
+            <a 
+              className={style.link} 
+              href={"mailto:"+props.personalInformation.email}
+            >
+              {props.personalInformation.email}
+            </a>
           </div>
         </div>
     </div>
