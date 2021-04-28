@@ -51,16 +51,16 @@ export const ProfessionalBackground:React.FC<Props> = ({
             profileDescription={profileDescription}
           />
       }
-      { education && 
+      { education?.length !== 0 && 
         <EducationList
           education={education}
         />
       }
-      {professionalExperiences && 
+      {professionalExperiences?.length !== 0 && 
         <ProfessionalExperiencesList 
           professionalExperiences={professionalExperiences} 
         />}
-      {internshipsExperience && 
+      {internshipsExperience?.length !== 0 && 
         <InternshipsExperienceList 
           internshipsExperience={internshipsExperience}
         />
