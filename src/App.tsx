@@ -140,6 +140,10 @@ const resumeContent = {
       as our database`,
     },
   ],
+  profileDescription: `Developer experienced on Web Technologies that cares about the product and
+  is always open to new technologies and roles. Team player that is a preacher of
+  communication, patience and humility. And a Friend that is always available to
+  share knowledge and an ear.`,
 }
 
 const App: React.FC = () => {
@@ -160,6 +164,7 @@ const App: React.FC = () => {
         showSkillLevel={resumeContent.showSkillLevel}
       />
       <ProfessionalBackground
+      profileDescription={resumeContent.profileDescription}
       professionalExperiences={resumeContent.professionalExperience}
       internshipsExperience={resumeContent.internshipsExperience}
       />

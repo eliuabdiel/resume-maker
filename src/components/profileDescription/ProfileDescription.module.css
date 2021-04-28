@@ -1,0 +1,15 @@
+.profileDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.description {
+  margin-top: 0.5rem;
+  text-align: justify;
+  text-justify: inter-word;
+}

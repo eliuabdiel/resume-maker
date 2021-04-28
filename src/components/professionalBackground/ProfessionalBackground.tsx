@@ -1,6 +1,7 @@
 import React from 'react'
 import { InternshipsExperienceList } from '../internshipsExperienceList/InternshipsExperienceList'
 import { ProfessionalExperiencesList } from '../professionalExperienceList/ProfessionalExperiencesList'
+import { ProfileDescription } from '../profileDescription/ProfileDescription'
 import style from './ProfessionalBackground.module.css'
 
 interface Education {
@@ -44,9 +45,14 @@ export const ProfessionalBackground:React.FC<Props> = ({
 }) => {
   return (
     <div className={style.backgroundContainer}>
-      
+      { profileDescription && 
+          <ProfileDescription 
+            profileDescription={profileDescription}
+          />
+      }
       <ProfessionalExperiencesList professionalExperiences={professionalExperiences} />
       <InternshipsExperienceList internshipsExperience={internshipsExperience}/>
+      
     </div>
   )
 }
