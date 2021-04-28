@@ -119,7 +119,7 @@ const resumeContent = {
 
 const App: React.FC = () => {
   return (
-    <div style={{width: "1000px", margin: "auto"}}>
+    <div style={{width: "900px", margin: "auto"}}>
       <Header
         personalInformation={
           resumeContent.personalInformation
