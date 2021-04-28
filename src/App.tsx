@@ -119,29 +119,29 @@ const resumeContent = {
 
 const App: React.FC = () => {
   return (
-    <>
-    <Header
-      personalInformation={
-        resumeContent.personalInformation
-      }
-      backgroundColor={resumeContent.HeaderBackgroundColor}
-      imgUrl={resumeContent.profileUrlImg}
-    />
-    <Body>
-      <SkillsList
-        skills={resumeContent.skills}
-        languages={resumeContent.languages}
-        color={resumeContent.skillsLevelColor}
-        showSkillLevel={resumeContent.showSkillLevel}
+    <div style={{width: "1000px", margin: "auto"}}>
+      <Header
+        personalInformation={
+          resumeContent.personalInformation
+        }
+        backgroundColor={resumeContent.HeaderBackgroundColor}
+        imgUrl={resumeContent.profileUrlImg}
       />
-      <ProfessionalBackground
-        profileDescription={resumeContent.profileDescription}
-        education={resumeContent.education}
-        professionalExperiences={resumeContent.professionalExperience}
-        internshipsExperience={resumeContent.internshipsExperience}
-      />
-    </Body>
-    </>
+      <Body>
+        <SkillsList
+          skills={resumeContent.skills}
+          languages={resumeContent.languages}
+          color={resumeContent.skillsLevelColor}
+          showSkillLevel={resumeContent.showSkillLevel}
+        />
+        <ProfessionalBackground
+          profileDescription={resumeContent.profileDescription}
+          education={resumeContent.education}
+          professionalExperiences={resumeContent.professionalExperience}
+          internshipsExperience={resumeContent.internshipsExperience}
+        />
+      </Body>
+    </div>
   )
 }
 
