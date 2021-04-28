@@ -8,9 +8,9 @@ export const ProfileDescription:React.FC<Props> = ({profileDescription}) => {
   return (
     <div className={style.profileDescriptionContainer}>
       <label className={style.title}>Profile</label>
-      <div className={style.description}>
-        {profileDescription}
-      </div>
+      {profileDescription && <div className={style.description}
+        dangerouslySetInnerHTML={{__html: profileDescription}}
+      />}
     </div>
     
   )

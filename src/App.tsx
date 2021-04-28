@@ -64,86 +64,6 @@ const resumeContent = {
   ],
   skillsLevelColor: "#000000",
   showSkillLevel: true,
-  professionalExperience: [
-    {
-    role: "Project Lead",
-    company: "Polytechnic University of Sinaloa",
-    location: "Mazatlán",
-    fechaInicio: "August 2018",
-    fechaFinal: "December 2021",
-    description: `Leading and developing a Web Application to improve the internship
-    process that will impact the way that university staff and also students
-    go through this process. Implementing RESTful services with Spring Boot
-    (Java), a Single Page Application with React JS (JavaScript), and MongoDB
-    as our database`,
-    },
-    {
-      role: "Project Lead",
-      company: "Polytechnic University of Sinaloa",
-      location: "Mazatlán",
-      fechaInicio: "August 2018",
-      fechaFinal: "December 2021",
-      description: `<strong>Leading</strong> and developing a Web Application to improve the internship
-      process that will impact the way that university staff and also students
-      go through this process. Implementing RESTful services with Spring Boot
-      (Java), a Single Page Application with React JS (JavaScript), and MongoDB
-      as our database`,
-    },
-    {
-      role: "Project Lead",
-      company: "Polytechnic University of Sinaloa",
-      location: "Mazatlán",
-      fechaInicio: "August 2018",
-      fechaFinal: "December 2021",
-      description: `Leading and developing a Web Application to improve the internship
-      process that will impact the way that university staff and also students
-      go through this process. Implementing RESTful services with Spring Boot
-      (Java), a Single Page Application with React JS (JavaScript), and MongoDB
-      as our database`,
-    },
-  ],
-  internshipsExperience: [
-    {
-    role: "Project Lead",
-    company: "Polytechnic University of Sinaloa",
-    location: "Mazatlán",
-    fechaInicio: "August 2018",
-    fechaFinal: "December 2021",
-    description: `Leading and developing a Web Application to improve the internship
-    process that will impact the way that university staff and also students
-    go through this process. Implementing RESTful services with Spring Boot
-    (Java), a Single Page Application with React JS (JavaScript), and MongoDB
-    as our database`,
-    },
-    {
-      role: "Project Lead",
-      company: "Polytechnic University of Sinaloa",
-      location: "Mazatlán",
-      fechaInicio: "August 2018",
-      fechaFinal: "December 2021",
-      description: `<strong>Leading</strong> and developing a Web Application to improve the internship
-      process that will impact the way that university staff and also students
-      go through this process. Implementing RESTful services with Spring Boot
-      (Java), a Single Page Application with React JS (JavaScript), and MongoDB
-      as our database`,
-    },
-    {
-      role: "Project Lead",
-      company: "Polytechnic University of Sinaloa",
-      location: "Mazatlán",
-      fechaInicio: "August 2018",
-      fechaFinal: "December 2021",
-      description: `Leading and developing a Web Application to improve the internship
-      process that will impact the way that university staff and also students
-      go through this process. Implementing RESTful services with Spring Boot
-      (Java), a Single Page Application with React JS (JavaScript), and MongoDB
-      as our database`,
-    },
-  ],
-  profileDescription: `Developer experienced on Web Technologies that cares about the product and
-  is always open to new technologies and roles. Team player that is a preacher of
-  communication, patience and humility. And a Friend that is always available to
-  share knowledge and an ear.`,
   education: [
     {
       degree: "Information Technology Engineer",
@@ -153,6 +73,50 @@ const resumeContent = {
       fechaFinal: "December 2021",
     },
   ],
+  profileDescription: `<strong>Developer</strong> experienced on <strong>Web Technologies</strong> that cares about the product and
+  is always open to new technologies and roles. <strong>Team player</strong> that is a preacher of
+  <strong>communication</strong>, <strong>patience</strong> and <strong>humility</strong>. And a <strong>Friend</strong> that is always available to
+  <strong>share knowledge</strong> and an ear.`,
+  professionalExperience: [],
+  internshipsExperience: [
+    {
+      role: "Project Lead",
+      company: "Polytechnic University of Sinaloa",
+      location: "Mazatlán",
+      fechaInicio: "August 2018",
+      fechaFinal: "December 2021",
+      description: `Leading and developing a Web Application to improve the internship
+      process that will impact the way that university staff and also students
+      go through this process. Implementing RESTful services with Spring Boot
+      (Java), a Single Page Application with React JS (JavaScript), and MongoDB
+      as our database`,
+    },
+    {
+      role: "Project Lead",
+      company: "Polytechnic University of Sinaloa",
+      location: "Mazatlán",
+      fechaInicio: "August 2018",
+      fechaFinal: "December 2021",
+      description: `<strong>Leading</strong> and developing a Web Application to improve the internship
+      process that will impact the way that university staff and also students
+      go through this process. Implementing RESTful services with Spring Boot
+      (Java), a Single Page Application with React JS (JavaScript), and MongoDB
+      as our database`,
+    },
+    {
+      role: "Project Lead",
+      company: "Polytechnic University of Sinaloa",
+      location: "Mazatlán",
+      fechaInicio: "August 2018",
+      fechaFinal: "December 2021",
+      description: `Leading and developing a Web Application to improve the internship
+      process that will impact the way that university staff and also students
+      go through this process. Implementing RESTful services with Spring Boot
+      (Java), a Single Page Application with React JS (JavaScript), and MongoDB
+      as our database`,
+    },
+  ],
+  
 }
 
 const App: React.FC = () => {
