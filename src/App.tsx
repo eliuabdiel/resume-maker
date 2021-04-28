@@ -3,7 +3,7 @@ import { Body } from './components/body/Body';
 import { Header } from './components/header/Header';
 import { ProfessionalBackground } from './components/professionalBackground/ProfessionalBackground';
 import { SkillsList } from './components/skillsList/SkillsList';
-import avatar from './img/avatar-default.svg'
+import me from './img/me_cv_photo.jpg'
 const resumeContent = {
   personalInformation: {
     name: "Abdiel Zamudio",
@@ -17,7 +17,7 @@ const resumeContent = {
     email: "eliu_070@hotmail.com"
   },
   HeaderBackgroundColor: "#ffcdd2",
-  profileUrlImg: avatar,
+  profileUrlImg: me,
   skills: [
     {
       name: "JavaScript",
@@ -83,40 +83,38 @@ const resumeContent = {
       role: "Project Lead",
       company: "Polytechnic University of Sinaloa",
       location: "Mazatlán",
-      fechaInicio: "August 2018",
-      fechaFinal: "December 2021",
-      description: `Leading and developing a Web Application to improve the internship
-      process that will impact the way that university staff and also students
-      go through this process. Implementing RESTful services with Spring Boot
-      (Java), a Single Page Application with React JS (JavaScript), and MongoDB
-      as our database`,
+      fechaInicio: "January 2021",
+      description: `<strong>Leading</strong> and <strong>developing</strong> a <strong>Web Application</strong> to improve the internship
+      process that will <strong>impact</strong> the way that university staff and also students
+      go through this process. Implementing <strong>RESTful services</strong> with <strong>Spring Boot
+      (Java)</strong>, a <strong>Single Page Application</strong> with <strong>React JS (JavaScript)</strong>, and <strong>MongoDB</strong>
+      as our database.`,
     },
     {
-      role: "Project Lead",
+      role: "Front-End Developer Lead",
       company: "Polytechnic University of Sinaloa",
       location: "Mazatlán",
-      fechaInicio: "August 2018",
-      fechaFinal: "December 2021",
-      description: `<strong>Leading</strong> and developing a Web Application to improve the internship
-      process that will impact the way that university staff and also students
-      go through this process. Implementing RESTful services with Spring Boot
-      (Java), a Single Page Application with React JS (JavaScript), and MongoDB
-      as our database`,
+      fechaInicio: "November 2020",
+      fechaFinal: "December 2020",
+      description: `Building <strong>User Interfaces</strong> and <strong>leading</strong> a team of Front-End developers to
+      deliver a <strong>Web Application</strong> that automate Water Treatment Plant processes
+      and logistics. Developed using <strong>MVC</strong> pattern with <strong>Flask</strong> micro-framework,
+      <strong>Bootstrap</strong> and <strong>MySQL</strong>.`,
     },
     {
-      role: "Project Lead",
-      company: "Polytechnic University of Sinaloa",
+      role: "Web Developer",
+      company: "Red 2000",
       location: "Mazatlán",
-      fechaInicio: "August 2018",
-      fechaFinal: "December 2021",
-      description: `Leading and developing a Web Application to improve the internship
-      process that will impact the way that university staff and also students
-      go through this process. Implementing RESTful services with Spring Boot
-      (Java), a Single Page Application with React JS (JavaScript), and MongoDB
-      as our database`,
+      fechaInicio: "November 2019",
+      fechaFinal: "December 2019",
+      description: `<strong>Developed</strong> a <strong>Feature</strong> that is making an <strong>impact</strong> on the company <strong>most
+      important product</strong>, that is built with <strong>Laravel (PHP)</strong> framework, with the
+      specific purpose of reading <strong>XML</strong>, and creating templates that represent a
+      <strong>CFDI</strong> from the data provided by the XML and the company database, also
+      with the option to transform the templates into PDF.`,
     },
   ],
-  
+
 }
 
 const App: React.FC = () => {
