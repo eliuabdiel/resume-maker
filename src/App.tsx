@@ -31,12 +31,12 @@ const resumeContent = {
       level: 80,
     },
     {
-      name: "Spring Boot",
-      level: 60,
-    },
-    {
       name: "Java",
       level: 70,
+    },
+    {
+      name: "Spring Boot",
+      level: 60,
     },
     {
       name: "MongoDB",
@@ -50,7 +50,9 @@ const resumeContent = {
       name: "Git, GitHub",
       level: 70,
     }
-  ]
+  ],
+  skillsLevelColor: "#000000",
+  showSkillLevel: true,
 }
 
 const App: React.FC = () => {
@@ -66,7 +68,10 @@ const App: React.FC = () => {
     <Body>
       <SkillsList
         skills={resumeContent.skills}
+        color={resumeContent.skillsLevelColor}
+        showSkillLevel={resumeContent.showSkillLevel}
       />
+      
     </Body>
     </>
   )

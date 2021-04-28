@@ -13,7 +13,7 @@ interface Props {
   showSkillLevel?: boolean;
 }
 
-export const SkillsList:React.FC<Props> = ({skills,color,showSkillLevel}) => {
+export const SkillsList:React.FC<Props> = ({skills, color, showSkillLevel}) => {
   console.log(skills)
   if (showSkillLevel)
     return (

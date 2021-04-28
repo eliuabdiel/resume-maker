@@ -1,0 +1,14 @@
+.totalBar {
+  margin-top: 0.5rem;
+  width: 90%;
+  height: 4px;
+  background-color: #d8d2d2;
+  position: relative;
+}
+
+.skillLevel {
+  position: absolute;
+  height: 4px;
+  background-color: green;
+  /* border-right: 1px solid black; */
+}
