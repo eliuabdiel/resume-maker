@@ -23,7 +23,9 @@ export const Experience:React.FC<Props> = ({
       <div className={style.experienceContainer}>
         <label className={style.titleExperience}>{role + " - " +company + " " + location}</label>
         <label className={style.dates}>{fechaInicio + " - " + fechaFinal}</label>
-        <div className={style.description}>{description}</div>
+        { description && <div className={style.description} 
+          dangerouslySetInnerHTML={{__html: description}}
+          ></div>}
       </div>
     </li>
   )

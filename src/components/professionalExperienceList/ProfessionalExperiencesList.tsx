@@ -23,6 +23,7 @@ export const ProfessionalExperiencesList:React.FC<Props> = ({
         {professionalExperiences 
           && professionalExperiences.map( (experience,index) => {
             return <Experience
+                    key={index}
                     role={experience.role}
                     company={experience.company}
                     location={experience.location}

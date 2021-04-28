@@ -83,7 +83,7 @@ const resumeContent = {
       location: "Mazatlán",
       fechaInicio: "August 2018",
       fechaFinal: "December 2021",
-      description: `Leading and developing a Web Application to improve the internship
+      description: `<strong>Leading</strong> and developing a Web Application to improve the internship
       process that will impact the way that university staff and also students
       go through this process. Implementing RESTful services with Spring Boot
       (Java), a Single Page Application with React JS (JavaScript), and MongoDB
