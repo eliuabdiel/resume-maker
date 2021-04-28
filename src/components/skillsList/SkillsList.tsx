@@ -20,7 +20,6 @@ interface Props {
 }
 
 export const SkillsList:React.FC<Props> = ({skills, color, languages, showSkillLevel}) => {
-  console.log(skills)
   if (showSkillLevel)
     return (
       <div className={style.skills}>
