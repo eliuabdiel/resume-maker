@@ -18,7 +18,8 @@ export const EducationCourse:React.FC<Props> = ({
   return (
     <li>
       <div className={style.educationContainer}>
-        <label className={style.titleEducation}>{degree + " - " + institution + " " + location}</label>
+        <label className={style.titleEducation}>{degree}</label>
+        <label className={style.institution}>{institution}</label>
         <label className={style.dates}>{fechaInicio + " - " + fechaFinal}</label>
       </div>
     </li>

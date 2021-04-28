@@ -19,7 +19,7 @@ export const ProfessionalExperiencesList:React.FC<Props> = ({
   return (
     <div className={style.professionalExperienceContainer}>
       <label className={style.title}>Professional Experience</label>
-      <ul>
+      <ul className={style.ul}>
         {professionalExperiences 
           && professionalExperiences.map( (experience,index) => {
             return <Experience

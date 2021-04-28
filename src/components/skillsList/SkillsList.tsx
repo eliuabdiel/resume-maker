@@ -23,7 +23,7 @@ export const SkillsList:React.FC<Props> = ({skills, color, languages, showSkillL
   if (showSkillLevel)
     return (
       <div className={style.skills}>
-        <label className={style.title}>Skills</label>
+        {skills && <label className={style.title}>Skills</label>}
         {skills &&
           skills.map( (skill,index) => {
             return (<Skill
@@ -35,7 +35,8 @@ export const SkillsList:React.FC<Props> = ({skills, color, languages, showSkillL
           }
         )}
         {languages && <label className={style.title} style={{marginTop: "2rem"}}>Languages</label>}
-        {languages && languages.map( (skill,index) => {
+        {languages && 
+          languages.map( (skill,index) => {
             return (<Skill
                       key={index}
                       name={skill.name}
@@ -48,7 +49,7 @@ export const SkillsList:React.FC<Props> = ({skills, color, languages, showSkillL
     )
   return (
     <div className={style.skills}>
-      <label className={style.title}>Skills</label>
+      {skills && <label className={style.title}>Skills</label>}
       {skills &&
         skills.map( skill => {
           return (<Skill
@@ -57,7 +58,8 @@ export const SkillsList:React.FC<Props> = ({skills, color, languages, showSkillL
         }
         )}
         {languages && <label className={style.title} style={{marginTop: "2rem"}}>Languages</label>}
-        {languages && languages.map( skill => {
+        {languages && 
+          languages.map( skill => {
             return (<Skill
                       name={skill.name}
                       level={skill.level}

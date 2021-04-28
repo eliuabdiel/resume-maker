@@ -18,7 +18,7 @@ export const InternshipsExperienceList:React.FC<Props> = ({internshipsExperience
   return (
     <div className={style.internshipsExperienceContainer}>
       <label className={style.title}>Internships</label>
-      <ul>
+      <ul className={style.ul}>
         {internshipsExperience 
           && internshipsExperience.map( (experience,index) => {
             return <Experience

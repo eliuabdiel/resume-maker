@@ -152,13 +152,6 @@ const resumeContent = {
       fechaInicio: "August 2018",
       fechaFinal: "December 2021",
     },
-    {
-      degree: "Information Technology Engineer",
-      institution: "Polytechnic University of Sinaloa",
-      location: "Mazatlán, Sinaloa, México",
-      fechaInicio: "August 2018",
-      fechaFinal: "December 2021",
-    },
   ],
 }
 

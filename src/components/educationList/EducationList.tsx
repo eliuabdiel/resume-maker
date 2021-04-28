@@ -18,7 +18,7 @@ export const EducationList:React.FC<Props> = ({education}) => {
   return (
     <div className={style.educationContainer}>
       <label className={style.title}>Education</label>
-      <ul>
+      <ul className={style.ul}>
         {education && education.map(( degree, index ) => {
           return <EducationCourse
                   key={index}
