@@ -1,0 +1,6 @@
+.backgroundContainer {
+  width: calc(70% - 2rem);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}

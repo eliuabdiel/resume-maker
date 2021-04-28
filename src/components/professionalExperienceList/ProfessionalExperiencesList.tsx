@@ -1,4 +1,5 @@
 import React from 'react'
+import { Experience } from '../experience/Experience'
 import style from './ProfessionalExperiencesList.module.css'
 interface ProfessinalExperiences {
   role?: string;
@@ -16,8 +17,21 @@ export const ProfessionalExperiencesList:React.FC<Props> = ({
   professionalExperiences
 }) => {
   return (
-    <div>
-      
+    <div className={style.professionalExperienceContainer}>
+      <label className={style.title}>Professional Experience</label>
+      <ul>
+        {professionalExperiences 
+          && professionalExperiences.map( (experience,index) => {
+            return <Experience
+                    role={experience.role}
+                    company={experience.company}
+                    location={experience.location}
+                    fechaInicio={experience.fechaInicio}
+                    fechaFinal={experience.fechaFinal}
+                    description={experience.description}
+                  />
+          })}
+      </ul>
     </div>
   )
 }
