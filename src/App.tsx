@@ -63,6 +63,7 @@ const resumeContent = {
   ],
   skillsLevelColor: "#000000",
   showSkillLevel: true,
+  professionalExperience: null,
 }
 
 const App: React.FC = () => {
@@ -80,9 +81,9 @@ const App: React.FC = () => {
         skills={resumeContent.skills}
         languages={resumeContent.languages}
         color={resumeContent.skillsLevelColor}
-        showSkillLevel={false}
+        showSkillLevel={resumeContent.showSkillLevel}
       />
-      
+    
     </Body>
     </>
   )

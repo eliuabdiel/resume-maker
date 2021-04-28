@@ -25,8 +25,9 @@ export const SkillsList:React.FC<Props> = ({skills, color, languages, showSkillL
       <div className={style.skills}>
         <label className={style.title}>Skills</label>
         {skills &&
-          skills.map( skill => {
+          skills.map( (skill,index) => {
             return (<Skill
+                      key={index}
                       name={skill.name}
                       level={skill.level}
                       color={color}
@@ -34,8 +35,9 @@ export const SkillsList:React.FC<Props> = ({skills, color, languages, showSkillL
           }
         )}
         {languages && <label className={style.title} style={{marginTop: "2rem"}}>Languages</label>}
-        {languages && languages.map( skill => {
+        {languages && languages.map( (skill,index) => {
             return (<Skill
+                      key={index}
                       name={skill.name}
                       level={skill.level}
                       color={color}
