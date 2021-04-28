@@ -51,6 +51,16 @@ const resumeContent = {
       level: 70,
     }
   ],
+  languages: [
+    {
+      name: "English",
+      level: 70,
+    },
+    {
+      name: "Spanish",
+      level: 100,
+    },
+  ],
   skillsLevelColor: "#000000",
   showSkillLevel: true,
 }
@@ -68,8 +78,9 @@ const App: React.FC = () => {
     <Body>
       <SkillsList
         skills={resumeContent.skills}
+        languages={resumeContent.languages}
         color={resumeContent.skillsLevelColor}
-        showSkillLevel={resumeContent.showSkillLevel}
+        showSkillLevel={false}
       />
       
     </Body>

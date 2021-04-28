@@ -7,18 +7,25 @@ interface Skills {
   level?: number;
 }
 
+interface Languages {
+  name?: string;
+  level?: number;
+}
+
 interface Props {
   skills?: Skills[];
+  languages?: Languages[];
   color?: string;
   showSkillLevel?: boolean;
 }
 
-export const SkillsList:React.FC<Props> = ({skills, color, showSkillLevel}) => {
+export const SkillsList:React.FC<Props> = ({skills, color, languages, showSkillLevel}) => {
   console.log(skills)
   if (showSkillLevel)
     return (
       <div className={style.skills}>
-       {skills &&
+        <label className={style.title}>Skills</label>
+        {skills &&
           skills.map( skill => {
             return (<Skill
                       name={skill.name}
@@ -27,10 +34,20 @@ export const SkillsList:React.FC<Props> = ({skills, color, showSkillLevel}) => {
                     />)
           }
         )}
+        {languages && <label className={style.title} style={{marginTop: "2rem"}}>Languages</label>}
+        {languages && languages.map( skill => {
+            return (<Skill
+                      name={skill.name}
+                      level={skill.level}
+                      color={color}
+                    />)
+        })}
+        
       </div>
     )
   return (
     <div className={style.skills}>
+      <label className={style.title}>Skills</label>
       {skills &&
         skills.map( skill => {
           return (<Skill
@@ -38,6 +55,14 @@ export const SkillsList:React.FC<Props> = ({skills, color, showSkillLevel}) => {
                   />)
         }
         )}
+        {languages && <label className={style.title} style={{marginTop: "2rem"}}>Languages</label>}
+        {languages && languages.map( skill => {
+            return (<Skill
+                      name={skill.name}
+                      level={skill.level}
+                      color={color}
+                    />)
+        })}
     </div>
   )
   

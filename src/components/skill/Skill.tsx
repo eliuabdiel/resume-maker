@@ -11,10 +11,12 @@ export const Skill:React.FC<Props> = ({name, level, color}) => {
   return (
     <div className={style.skillSet}>
       <label className={style.skillName}>{ name }</label>
-      <LevelBar 
-        level={level}
-        color={color}
-      />
+      {level && 
+        <LevelBar 
+          level={level}
+          color={color}
+        />
+      }
     </div>
   )
 }
