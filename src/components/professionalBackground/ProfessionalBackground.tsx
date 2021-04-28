@@ -1,4 +1,5 @@
 import React from 'react'
+import { EducationList } from '../educationList/EducationList'
 import { InternshipsExperienceList } from '../internshipsExperienceList/InternshipsExperienceList'
 import { ProfessionalExperiencesList } from '../professionalExperienceList/ProfessionalExperiencesList'
 import { ProfileDescription } from '../profileDescription/ProfileDescription'
@@ -50,8 +51,21 @@ export const ProfessionalBackground:React.FC<Props> = ({
             profileDescription={profileDescription}
           />
       }
-      <ProfessionalExperiencesList professionalExperiences={professionalExperiences} />
-      <InternshipsExperienceList internshipsExperience={internshipsExperience}/>
+      { education && 
+        <EducationList
+          education={education}
+        />
+      }
+      {professionalExperiences && 
+        <ProfessionalExperiencesList 
+          professionalExperiences={professionalExperiences} 
+        />}
+      {internshipsExperience && 
+        <InternshipsExperienceList 
+          internshipsExperience={internshipsExperience}
+        />
+      }
+      
       
     </div>
   )

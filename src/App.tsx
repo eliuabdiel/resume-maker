@@ -144,6 +144,22 @@ const resumeContent = {
   is always open to new technologies and roles. Team player that is a preacher of
   communication, patience and humility. And a Friend that is always available to
   share knowledge and an ear.`,
+  education: [
+    {
+      degree: "Information Technology Engineer",
+      institution: "Polytechnic University of Sinaloa",
+      location: "Mazatlán, Sinaloa, México",
+      fechaInicio: "August 2018",
+      fechaFinal: "December 2021",
+    },
+    {
+      degree: "Information Technology Engineer",
+      institution: "Polytechnic University of Sinaloa",
+      location: "Mazatlán, Sinaloa, México",
+      fechaInicio: "August 2018",
+      fechaFinal: "December 2021",
+    },
+  ],
 }
 
 const App: React.FC = () => {
@@ -164,9 +180,10 @@ const App: React.FC = () => {
         showSkillLevel={resumeContent.showSkillLevel}
       />
       <ProfessionalBackground
-      profileDescription={resumeContent.profileDescription}
-      professionalExperiences={resumeContent.professionalExperience}
-      internshipsExperience={resumeContent.internshipsExperience}
+        profileDescription={resumeContent.profileDescription}
+        education={resumeContent.education}
+        professionalExperiences={resumeContent.professionalExperience}
+        internshipsExperience={resumeContent.internshipsExperience}
       />
     </Body>
     </>
