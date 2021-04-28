@@ -1,4 +1,5 @@
 import React from 'react'
+import { InternshipsExperienceList } from '../internshipsExperienceList/InternshipsExperienceList'
 import { ProfessionalExperiencesList } from '../professionalExperienceList/ProfessionalExperiencesList'
 import style from './ProfessionalBackground.module.css'
 
@@ -44,7 +45,8 @@ export const ProfessionalBackground:React.FC<Props> = ({
   return (
     <div className={style.backgroundContainer}>
       
-      {professionalExperiences && <ProfessionalExperiencesList professionalExperiences={professionalExperiences} />}
+      <ProfessionalExperiencesList professionalExperiences={professionalExperiences} />
+      <InternshipsExperienceList internshipsExperience={internshipsExperience}/>
     </div>
   )
 }

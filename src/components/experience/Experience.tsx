@@ -25,7 +25,7 @@ export const Experience:React.FC<Props> = ({
         <label className={style.dates}>{fechaInicio + " - " + fechaFinal}</label>
         { description && <div className={style.description} 
           dangerouslySetInnerHTML={{__html: description}}
-          ></div>}
+          />}
       </div>
     </li>
   )

@@ -102,6 +102,44 @@ const resumeContent = {
       as our database`,
     },
   ],
+  internshipsExperience: [
+    {
+    role: "Project Lead",
+    company: "Polytechnic University of Sinaloa",
+    location: "Mazatlán",
+    fechaInicio: "August 2018",
+    fechaFinal: "December 2021",
+    description: `Leading and developing a Web Application to improve the internship
+    process that will impact the way that university staff and also students
+    go through this process. Implementing RESTful services with Spring Boot
+    (Java), a Single Page Application with React JS (JavaScript), and MongoDB
+    as our database`,
+    },
+    {
+      role: "Project Lead",
+      company: "Polytechnic University of Sinaloa",
+      location: "Mazatlán",
+      fechaInicio: "August 2018",
+      fechaFinal: "December 2021",
+      description: `<strong>Leading</strong> and developing a Web Application to improve the internship
+      process that will impact the way that university staff and also students
+      go through this process. Implementing RESTful services with Spring Boot
+      (Java), a Single Page Application with React JS (JavaScript), and MongoDB
+      as our database`,
+    },
+    {
+      role: "Project Lead",
+      company: "Polytechnic University of Sinaloa",
+      location: "Mazatlán",
+      fechaInicio: "August 2018",
+      fechaFinal: "December 2021",
+      description: `Leading and developing a Web Application to improve the internship
+      process that will impact the way that university staff and also students
+      go through this process. Implementing RESTful services with Spring Boot
+      (Java), a Single Page Application with React JS (JavaScript), and MongoDB
+      as our database`,
+    },
+  ],
 }
 
 const App: React.FC = () => {
@@ -123,6 +161,7 @@ const App: React.FC = () => {
       />
       <ProfessionalBackground
       professionalExperiences={resumeContent.professionalExperience}
+      internshipsExperience={resumeContent.internshipsExperience}
       />
     </Body>
     </>
