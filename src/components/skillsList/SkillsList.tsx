@@ -19,12 +19,13 @@ export const SkillsList:React.FC<Props> = ({skills,color,showSkillLevel}) => {
     return (
       <div className={style.skills}>
        {skills &&
-        skills.map( skill => {
-          return (<Skill
-                    name={skill.name}
-                    level={skill.level}
-                  />)
-        }
+          skills.map( skill => {
+            return (<Skill
+                      name={skill.name}
+                      level={skill.level}
+                      color={color}
+                    />)
+          }
         )}
       </div>
     )

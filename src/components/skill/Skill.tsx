@@ -1,14 +1,20 @@
 import React from 'react'
+import style from './Skill.module.css'
 interface Props {
   name?:string;
   level?:number;
+  color?: string;
 }
 
-export const Skill:React.FC<Props> = ({name, level}) => {
+export const Skill:React.FC<Props> = ({name, level, color}) => {
   return (
-    <div>
-      <h6>{ name }</h6>
-      <h6>{ level }</h6>
+    <div className={style.skillSet}>
+      <label className={style.skillName}>{ name }</label>
+      <div className={style.totalBar}>
+      <div className={style.skillLevel}>
+
+      </div>
+      </div>
     </div>
   )
 }

@@ -1,0 +1,23 @@
+.skillSet {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.skillName {
+  font-size: 1.5rem;
+}
+
+.totalBar {
+  margin-top: 0.5rem;
+  width: 80%;
+  height: 4px;
+  background-color: #bdbcbc;
+  position: relative;
+}
+
+.skillLevel {
+  position: absolute;
+  width: 80%;
+  height: 4px;
+  background-color: green;
+}
