@@ -1,4 +1,9 @@
 .experienceContainer {
+  page-break-inside: avoid;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow-wrap: break-word;
   margin: 0px 0px 1rem 0px;
 }
 .titleExperience {

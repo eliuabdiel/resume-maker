@@ -21,41 +21,41 @@ const resumeContent = {
   skills: [
     {
       name: "JavaScript",
-      level: 90,
+      level: 80,
     },
     {
       name: "React JS",
-      level: 80,
+      level: 70,
     },
     {
       name: "HTML, CSS",
-      level: 80,
+      level: 70,
     },
     {
       name: "Java",
-      level: 70,
+      level: 60,
     },
     {
       name: "Spring Boot",
-      level: 60,
+      level: 50,
     },
     {
       name: "MongoDB",
-      level: 60,
+      level: 50,
     },
     {
       name: "MySQL",
-      level: 60,
+      level: 50,
     },
     {
       name: "Git, GitHub",
-      level: 70,
+      level: 60,
     }
   ],
   languages: [
     {
       name: "English",
-      level: 70,
+      level: 65,
     },
     {
       name: "Spanish",
@@ -85,7 +85,7 @@ const resumeContent = {
       location: "Mazatlán",
       fechaInicio: "January 2021",
       description: `<strong>Leading</strong> and <strong>developing</strong> a <strong>Web Application</strong> to improve the internship
-      process that will <strong>impact</strong> the way that university staff and also students
+      process that will <strong>impact</strong> the way that university staff and students
       go through this process. Implementing <strong>RESTful services</strong> with <strong>Spring Boot
       (Java)</strong>, a <strong>Single Page Application</strong> with <strong>React JS (JavaScript)</strong>, and <strong>MongoDB</strong>
       as our database.`,
@@ -97,7 +97,7 @@ const resumeContent = {
       fechaInicio: "November 2020",
       fechaFinal: "December 2020",
       description: `Building <strong>User Interfaces</strong> and <strong>leading</strong> a team of Front-End developers to
-      deliver a <strong>Web Application</strong> that automate Water Treatment Plant processes
+      deliver a <strong>Web Application</strong> that automates Water Treatment Plant processes
       and logistics. Developed using <strong>MVC</strong> pattern with <strong>Flask</strong> micro-framework,
       <strong>Bootstrap</strong> and <strong>MySQL</strong>.`,
     },
