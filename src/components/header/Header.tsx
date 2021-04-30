@@ -15,7 +15,7 @@ interface PersonalInformation {
 
 }
 interface Props {
-  personalInformation: PersonalInformation;
+  personalInformation?: PersonalInformation;
   imgUrl?: string;
   backgroundColor?: string;
 }
@@ -24,24 +24,24 @@ export const Header: React.FC<Props> = (props) => {
   return (
     <div className={style.header} style={{backgroundColor: props.backgroundColor || '#d6fbfa'}}>
         <div className={style.imgContainer}>
-          <img src={props.imgUrl} className={style.img} alt={props.personalInformation.name}></img>
+          <img src={props.imgUrl} className={style.img} alt={props.personalInformation?.name}></img>
         </div>
         <div className={style.infoContainer}>
-          <label className={style.name}>{props.personalInformation.name}</label>
-          <label className={style.title}>{props.personalInformation.title}</label>
+          <label className={style.name}>{props.personalInformation?.name}</label>
+          <label className={style.title}>{props.personalInformation?.title}</label>
           <label className={style.location}>
             {(
-              props.personalInformation.city +', '+
-              props.personalInformation.state +', '+
-              props.personalInformation.country
+              props.personalInformation?.city +', '+
+              props.personalInformation?.state +', '+
+              props.personalInformation?.country
             )}
           </label>
           <div className={style.links}>
             {(
-              props.personalInformation.github && 
+              props.personalInformation?.github && 
                 <a 
                   className={style.link} 
-                  href={props.personalInformation.github}
+                  href={props.personalInformation?.github}
                 >
                   GitHub
                 </a>
@@ -49,22 +49,22 @@ export const Header: React.FC<Props> = (props) => {
             )}
             
             {(
-              props.personalInformation.linkedin && 
+              props.personalInformation?.linkedin && 
                 <a 
                   className={style.link} 
-                  href={props.personalInformation.linkedin}
+                  href={props.personalInformation?.linkedin}
                 >
                   Linkedin
                 </a>
             )}
           </div>
           <div className={style.contact}>
-            <label>{props.personalInformation.number}</label>
+            <label>{props.personalInformation?.number}</label>
             <a 
               className={style.link} 
-              href={"mailto:"+props.personalInformation.email}
+              href={"mailto:"+props.personalInformation?.email}
             >
-              {props.personalInformation.email}
+              {props.personalInformation?.email}
             </a>
           </div>
         </div>
