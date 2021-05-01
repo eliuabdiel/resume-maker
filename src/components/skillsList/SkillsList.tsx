@@ -1,4 +1,5 @@
 import React from 'react'
+import { useResumeContent } from '../../context/ResumeDataContext'
 import { Skill } from '../skill/Skill'
 import style from './SkillsList.module.css'
 
@@ -7,41 +8,30 @@ interface Skills {
   level?: number;
 }
 
-interface Languages {
-  name?: string;
-  level?: number;
-}
-
-interface Props {
-  skills?: Skills[];
-  languages?: Languages[];
-  color?: string;
-  showSkillLevel?: boolean;
-}
-
-export const SkillsList:React.FC<Props> = ({skills, color, languages, showSkillLevel}) => {
+export const SkillsList:React.FC = () => {
+  const { skills, languages, skillsLevelColor, showSkillLevel} = useResumeContent()
   if (showSkillLevel)
     return (
       <div className={style.skills}>
         {skills && <label className={style.title}>Skills</label>}
         {skills &&
-          skills.map( (skill,index) => {
+          skills.map( (skill: Skills, index: number) => {
             return (<Skill
                       key={index}
                       name={skill.name}
                       level={skill.level}
-                      color={color}
+                      color={skillsLevelColor}
                     />)
           }
         )}
         {languages && <label className={style.title} style={{marginTop: "2rem"}}>Languages</label>}
         {languages && 
-          languages.map( (skill,index) => {
+          languages.map( (skill: Skills, index: number) => {
             return (<Skill
                       key={index}
                       name={skill.name}
                       level={skill.level}
-                      color={color}
+                      color={skillsLevelColor}
                     />)
         })}
         
@@ -51,19 +41,21 @@ export const SkillsList:React.FC<Props> = ({skills, color, languages, showSkillL
     <div className={style.skills}>
       {skills && <label className={style.title}>Skills</label>}
       {skills &&
-        skills.map( skill => {
+        skills.map( (skill: Skills, index: number) => {
           return (<Skill
+                    key={index}
                     name={skill.name}
                   />)
         }
         )}
         {languages && <label className={style.title} style={{marginTop: "2rem"}}>Languages</label>}
         {languages && 
-          languages.map( skill => {
+          languages.map( (skill: Skills, index: number) => {
             return (<Skill
+                      key={index}
                       name={skill.name}
                       level={skill.level}
-                      color={color}
+                      color={skillsLevelColor}
                     />)
         })}
     </div>

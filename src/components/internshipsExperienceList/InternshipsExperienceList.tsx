@@ -1,20 +1,13 @@
 import React from 'react'
 import { Experience } from '../experience/Experience'
 import style from './InternshipsExperienceList.module.css'
+import { useResumeContent } from '../../context/ResumeDataContext'
 
-interface InternshipsExperencie {
-  role?: string;
-  company?: string;
-  location?: string;
-  fechaInicio?: string;
-  fechaFinal?: string;
-  description?: string;
-}
-interface Props {
-  internshipsExperience?: InternshipsExperencie[];
-}
 
-export const InternshipsExperienceList:React.FC<Props> = ({internshipsExperience}) => {
+export const InternshipsExperienceList:React.FC = () => {
+  const { internshipsExperience } = useResumeContent()
+  if (internshipsExperience?.length === 0)
+    return null
   return (
     <div className={style.internshipsExperienceContainer}>
       <label className={style.title}>Internships</label>

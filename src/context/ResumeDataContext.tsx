@@ -46,14 +46,15 @@ interface ResumeData {
   internshipsExperience?: Experience[];
 }
 
+const emptydata: ResumeData = {}
 
-const ResumeDataContext = createContext<ResumeData | undefined>(undefined)
+const ResumeDataContext = createContext<ResumeData>(emptydata)
 
 export const useResumeContent = () => {
   return useContext(ResumeDataContext)
 }
 export const ResumeDataProvider: React.FC<{children:ReactNode}> = ({ children }) => {
-  const [resumeContent, setResumeContent] = useState<ResumeData>()
+  const [resumeContent, setResumeContent] = useState<ResumeData>(emptydata)
   const [loading, setLoading] = useState<boolean>(true)
 
   useEffect(()=>{
